@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Web Developer Bootcamp</title>
+		<link
+			rel="shortcut icon"
+			href="https://www.fillmurray.com/640/360"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/dist/css/style.css" />
+		<link rel="stylesheet" href="/dist/css/main.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<section class="bg-slate-100">
+				<div
+					class="max-h-screen flex py-10 flex-col wrapper space-y-4 text-center text-gray-600 container"
+				>
+					<h1 class="text-5xl font-black">TV SHOWS</h1>
+					<form class="space-x-4" id="tvMazeApi">
+						<input
+							type="text"
+							name="tvShowSearch"
+							id="tvShowSearch"
+							placeholder="Search"
+							class="px-5 py-3 border"
+						/>
+						<button
+							type="submit"
+							id="searchButton"
+							class="px-5 py-3 bg-blue-400 hover:bg-blue-500 font-medium rounded text-blue-50"
+						>
+							Search
+						</button>
+					</form>
+				</div>
+			</section>
+			<section
+				id="queryResults"
+				class="flex flex-wrap space-y-6 space-x-6 py-20 container"
+			></section>
+		</main>
+		<footer></footer>
+		<script src="/dist/js/tvShowApi.js"></script>
+	</body>
+</html>

@@ -1,6 +1,9 @@
 module.exports = {
-	content: ["*.{html,js}"],
+	content: ["*.html", "/dist/js/*.js"],
 	theme: {
+		container: {
+			center: true,
+		},
 		fontFamily: {
 			sans: [
 				"inter",
